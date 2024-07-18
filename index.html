@@ -7,68 +7,76 @@
 	<link rel="stylesheet" href="reset.css">
 	<link href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css" rel="stylesheet">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
+	<style>
+		body {
+			margin: 0;
+			background-color:rgb(255, 234, 255);
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.container {
+			width: 700px;
+			margin: 4em auto;
+			padding: 0 1em;
+		}
+		h1 {
+			text-align: center;
+			font-size: 3em;
+			margin: 2em 0;
+		}
+		h2 {
+			font-size: 35px;
+			margin-bottom: 2em;
+		}
+		.byline {
+			font-style: italic;
+			margin-bottom: 1em;
+		}
+		p {
+			margin-bottom: 1em;
+		}
+		#map {
+			width: 100%;
+			height: 500px;
+			margin-bottom: 1em;
+		}
+		.mapboxgl-popup {
+			max-width: 400px;
+			font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		}
+		#footer {
+			text-align: center;
+			padding: 4em;
+			background-color: #f0f1ff;
+			border-top: solid white 5px;
+		}
+
+		/* Media Queries for Mobile Responsiveness */
+		@media (max-width: 768px) {
+			.container {
+				width: 90%;
+				margin: 2em auto;
+			}
+			h1 {
+				font-size: 2.5em;
+			}
+			h2 {
+				font-size: 30px;
+			}
+		}
+		@media (max-width: 480px) {
+			.container {
+				width: 100%;
+				margin: 1em auto;
+			}
+			h1 {
+				font-size: 2em;
+			}
+			h2 {
+				font-size: 25px;
+			}
+		}
+	</style>
 </head>
-<style>
-    body {
-        margin: 0;
-        background-color:rgb(255, 234, 255);
-    }
-    /* Make the page 700px wide, centered */
-    .container {
-        width: 700px;
-        margin: 4em auto;
-    }
-    /* Use a nice font */
-    body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 3em;
-        margin: 2em 0;
-    }
-    h2 {
-		font-size: 35px;
-		margin-bottom: 2em;
-	}
-
-    .graphic {
-        max-width: 500px;
-        margin: 2em auto;
-    }
-
-    #footer {
-        text-align: center;
-        padding: 4em;
-        background-color: #f0f1ff;
-        border-top: solid white 5px;
-    }
-    .byline {
-		font-style: italic;
-		margin-bottom: 1em;
-	}
-
-	p {
-		margin-bottom: 1em;
-	}
-
-	#map {
-		width: 100%;
-		height: 500px;
-/*		background: yellow;*/
-		margin-bottom: 1em;
-	}
-	.mapboxgl-popup {
-	    max-width: 400px;
-	    font:
-	        12px/20px 'Helvetica Neue',
-	        Arial,
-	        Helvetica,
-	        sans-serif;
-	}
-
-</style>
 <body>
     <div class="container">
         <h1>Where Has Taylor Swift Performed the Eras Tour?</h1>
