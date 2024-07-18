@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mapbox class</title>
+	<link rel="stylesheet" href="reset.css">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css" rel="stylesheet">
+	<script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color:rgb(255, 234, 255);
+    }
+    /* Make the page 700px wide, centered */
+    .container {
+        width: 700px;
+        margin: 4em auto;
+    }
+    /* Use a nice font */
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin: 2em 0;
+    }
+    h2 {
+		font-size: 35px;
+		margin-bottom: 2em;
+	}
+
+    .graphic {
+        max-width: 500px;
+        margin: 2em auto;
+    }
+
+    #footer {
+        text-align: center;
+        padding: 4em;
+        background-color: #f0f1ff;
+        border-top: solid white 5px;
+    }
+    .byline {
+		font-style: italic;
+		margin-bottom: 1em;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	#map {
+		width: 100%;
+		height: 500px;
+/*		background: yellow;*/
+		margin-bottom: 1em;
+	}
+	.mapboxgl-popup {
+	    max-width: 400px;
+	    font:
+	        12px/20px 'Helvetica Neue',
+	        Arial,
+	        Helvetica,
+	        sans-serif;
+	}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Where Has Taylor Swift Performed the Eras Tour?</h1>
+        <h2>🦋🌟👗🧣🏙🐍💘🍷🥂🪶</h2>
+        <p class="byline">By Renata Carlos Daou</p>
+        <p>Analysts predict that the Eras Tour will likely exceed $1 billion in revenue by next March as Taylor Swift continues her international performances. If this projection is accurate, she will set a new record for the highest-grossing tour in music history, surpassing Elton John's farewell tour, which ended earlier this summer with a total of $939 million, according to <a href=https://time.com/6307420/taylor-swift-eras-tour-money-economy/> TIME </a>.</p>
+        <p>The tour began in Glendale, Arizona on March 17, 2023 and is scheduled to end in Vancouver, Canada on December 8, 2024, with a total of 152 shows across 54 cities.</p>
+        <p>Zoom into each country to get a closer look on the stadium locations.</p>
+        <div id="map"></div>
+        <p>Here is the chronological list of Taylor Swift's Eras Tour locations:</p>
+        <p>
+            <strong>March 17, 2023:</strong> State Farm Stadium, Glendale, Arizona, USA<br>
+            <strong>March 18, 2023:</strong> State Farm Stadium, Glendale, Arizona, USA<br>
+            <strong>March 24, 2023:</strong> Allegiant Stadium, Las Vegas, Nevada, USA<br>
+            <strong>March 25, 2023:</strong> Allegiant Stadium, Las Vegas, Nevada, USA<br>
+            <strong>March 31, 2023:</strong> AT&T Stadium, Arlington, Texas, USA<br>
+            <strong>April 1, 2023:</strong> AT&T Stadium, Arlington, Texas, USA<br>
+            <strong>April 2, 2023:</strong> AT&T Stadium, Arlington, Texas, USA<br>
+            <strong>April 13, 2023:</strong> Raymond James Stadium, Tampa, Florida, USA<br>
+            <strong>April 14, 2023:</strong> Raymond James Stadium, Tampa, Florida, USA<br>
+            <strong>April 15, 2023:</strong> Raymond James Stadium, Tampa, Florida, USA<br>
+            <strong>April 21, 2023:</strong> NRG Stadium, Houston, Texas, USA<br>
+            <strong>April 22, 2023:</strong> NRG Stadium, Houston, Texas, USA<br>
+            <strong>April 23, 2023:</strong> NRG Stadium, Houston, Texas, USA<br>
+            <strong>April 28, 2023:</strong> Mercedes-Benz Stadium, Atlanta, Georgia, USA<br>
+            <strong>April 29, 2023:</strong> Mercedes-Benz Stadium, Atlanta, Georgia, USA<br>
+            <strong>April 30, 2023:</strong> Mercedes-Benz Stadium, Atlanta, Georgia, USA<br>
+            <strong>May 5, 2023:</strong> Nissan Stadium, Nashville, Tennessee, USA<br>
+            <strong>May 6, 2023:</strong> Nissan Stadium, Nashville, Tennessee, USA<br>
+            <strong>May 7, 2023:</strong> Nissan Stadium, Nashville, Tennessee, USA<br>
+            <strong>May 12, 2023:</strong> Lincoln Financial Field, Philadelphia, PA, USA<br>
+            <strong>May 13, 2023:</strong> Lincoln Financial Field, Philadelphia, PA, USA<br>
+            <strong>May 14, 2023:</strong> Lincoln Financial Field, Philadelphia, PA, USA<br>
+            <strong>May 19, 2023:</strong> Gillette Stadium, Foxborough, MA, USA<br>
+            <strong>May 20, 2023:</strong> Gillette Stadium, Foxborough, MA, USA<br>
+            <strong>May 21, 2023:</strong> Gillette Stadium, Foxborough, MA, USA<br>
+            <strong>May 26, 2023:</strong> MetLife Stadium, East Rutherford, NJ, USA<br>
+            <strong>May 27, 2023:</strong> MetLife Stadium, East Rutherford, NJ, USA<br>
+            <strong>May 28, 2023:</strong> MetLife Stadium, East Rutherford, NJ, USA<br>
+            <strong>June 2, 2023:</strong> Soldier Field, Chicago, IL, USA<br>
+            <strong>June 3, 2023:</strong> Soldier Field, Chicago, IL, USA<br>
+            <strong>June 4, 2023:</strong> Soldier Field, Chicago, IL, USA<br>
+            <strong>June 9, 2023:</strong> Ford Field, Detroit, MI, USA<br>
+            <strong>June 10, 2023:</strong> Ford Field, Detroit, MI, USA<br>
+            <strong>June 16, 2023:</strong> Acrisure Stadium, Pittsburgh, PA, USA<br>
+            <strong>June 17, 2023:</strong> Acrisure Stadium, Pittsburgh, PA, USA<br>
+            <strong>June 23, 2023:</strong> U.S. Bank Stadium, Minneapolis, MN, USA<br>
+            <strong>June 24, 2023:</strong> U.S. Bank Stadium, Minneapolis, MN, USA<br>
+            <strong>June 30, 2023:</strong> Paycor Stadium, Cincinnati, OH, USA<br>
+            <strong>July 1, 2023:</strong> Paycor Stadium, Cincinnati, OH, USA<br>
+            <strong>July 7, 2023:</strong> Arrowhead Stadium, Kansas City, MO, USA<br>
+            <strong>July 8, 2023:</strong> Arrowhead Stadium, Kansas City, MO, USA<br>
+            <strong>July 14, 2023:</strong> Empower Field at Mile High, Denver, CO, USA<br>
+            <strong>July 15, 2023:</strong> Empower Field at Mile High, Denver, CO, USA<br>
+            <strong>July 22, 2023:</strong> Lumen Field, Seattle, WA, USA<br>
+            <strong>July 23, 2023:</strong> Lumen Field, Seattle, WA, USA<br>
+            <strong>July 28, 2023:</strong> Levi's Stadium, Santa Clara, CA, USA<br>
+            <strong>July 29, 2023:</strong> Levi's Stadium, Santa Clara, CA, USA<br>
+            <strong>August 3, 2023:</strong> SoFi Stadium, Inglewood, CA, USA<br>
+            <strong>August 4, 2023:</strong> SoFi Stadium, Inglewood, CA, USA<br>
+            <strong>August 5, 2023:</strong> SoFi Stadium, Inglewood, CA, USA<br>
+            <strong>August 7, 2023:</strong> SoFi Stadium, Inglewood, CA, USA<br>
+            <strong>August 8, 2023:</strong> SoFi Stadium, Inglewood, CA, USA<br>
+            <strong>August 9, 2023:</strong> SoFi Stadium, Inglewood, CA, USA<br>
+            <strong>August 24, 2023:</strong> Foro Sol, Mexico City, Mexico<br>
+            <strong>August 25, 2023:</strong> Foro Sol, Mexico City, Mexico<br>
+            <strong>August 26, 2023:</strong> Foro Sol, Mexico City, Mexico<br>
+            <strong>August 27, 2023:</strong> Foro Sol, Mexico City, Mexico<br>
+            <strong>November 9, 2023:</strong> Estadio River Plate, Buenos Aires, Argentina<br>
+            <strong>November 11, 2023:</strong> Estadio River Plate, Buenos Aires, Argentina<br>
+            <strong>November 12, 2023:</strong> Estadio River Plate, Buenos Aires, Argentina<br>
+            <strong>November 17, 2023:</strong> Estádio Nilton Santos, Rio de Janeiro, Brazil<br>
+            <strong>November 19, 2023:</strong> Estádio Nilton Santos, Rio de Janeiro, Brazil<br>
+            <strong>November 20, 2023:</strong> Estádio Nilton Santos, Rio de Janeiro, Brazil<br>
+            <strong>November 24, 2023:</strong> Allianz Parque, São Paulo, Brazil<br>
+            <strong>November 25, 2023:</strong> Allianz Parque, São Paulo, Brazil<br>
+            <strong>November 26, 2023:</strong> Allianz Parque, São Paulo, Brazil<br>
+            <strong>February 7, 2024:</strong> Tokyo Dome, Tokyo, Japan<br>
+            <strong>February 8, 2024:</strong> Tokyo Dome, Tokyo, Japan<br>
+            <strong>February 9, 2024:</strong> Tokyo Dome, Tokyo, Japan<br>
+            <strong>February 10, 2024:</strong> Tokyo Dome, Tokyo, Japan<br>
+            <strong>February 16, 2024:</strong> Melbourne Cricket Ground, Melbourne, Australia<br>
+            <strong>February 17, 2024:</strong> Melbourne Cricket Ground, Melbourne, Australia<br>
+            <strong>February 18, 2024:</strong> Melbourne Cricket Ground, Melbourne, Australia<br>
+            <strong>February 23, 2024:</strong> Accor Stadium, Sydney, Australia<br>
+            <strong>February 24, 2024:</strong> Accor Stadium, Sydney, Australia<br>
+            <strong>February 25, 2024:</strong> Accor Stadium, Sydney, Australia<br>
+            <strong>February 26, 2024:</strong> Accor Stadium, Sydney, Australia<br>
+            <strong>March 2, 2024:</strong> National Stadium, Singapore, Singapore<br>
+            <strong>March 3, 2024:</strong> National Stadium, Singapore, Singapore<br>
+            <strong>March 4, 2024:</strong> National Stadium, Singapore, Singapore<br>
+            <strong>March 7, 2024:</strong> National Stadium, Singapore, Singapore<br>
+            <strong>March 8, 2024:</strong> National Stadium, Singapore, Singapore<br>
+            <strong>March 9, 2024:</strong> National Stadium, Singapore, Singapore<br>
+            <strong>May 9, 2024:</strong> Stade de France, Paris, France<br>
+            <strong>May 10, 2024:</strong> Stade de France, Paris, France<br>
+            <strong>May 11, 2024:</strong> Stade de France, Paris, France<br>
+            <strong>May 12, 2024:</strong> Stade de France, Paris, France<br>
+            <strong>May 17, 2024:</strong> Friends Arena, Stockholm, Sweden<br>
+            <strong>May 18, 2024:</strong> Friends Arena, Stockholm, Sweden<br>
+            <strong>May 19, 2024:</strong> Friends Arena, Stockholm, Sweden<br>
+            <strong>May 24, 2024:</strong> Estádio da Luz, Lisbon, Portugal<br>
+            <strong>May 25, 2024:</strong> Estádio da Luz, Lisbon, Portugal<br>
+            <strong>May 29, 2024:</strong> Estadio Santiago Bernabéu, Madrid, Spain<br>
+            <strong>May 30, 2024:</strong> Estadio Santiago Bernabéu, Madrid, Spain<br>
+            <strong>June 2, 2024:</strong> Groupama Stadium, Lyon, France<br>
+            <strong>June 3, 2024:</strong> Groupama Stadium, Lyon, France<br>
+            <strong>June 7, 2024:</strong> BT Murrayfield Stadium, Edinburgh, United Kingdom<br>
+            <strong>June 8, 2024:</strong> BT Murrayfield Stadium, Edinburgh, United Kingdom<br>
+            <strong>June 9, 2024:</strong> BT Murrayfield Stadium, Edinburgh, United Kingdom<br>
+            <strong>June 13, 2024:</strong> Anfield, Liverpool, United Kingdom<br>
+            <strong>June 14, 2024:</strong> Anfield, Liverpool, United Kingdom<br>
+            <strong>June 15, 2024:</strong> Anfield, Liverpool, United Kingdom<br>
+            <strong>June 18, 2024:</strong> Principality Stadium, Cardiff, United Kingdom<br>
+            <strong>June 21, 2024:</strong> Wembley Stadium, London, United Kingdom<br>
+            <strong>June 22, 2024:</strong> Wembley Stadium, London, United Kingdom<br>
+            <strong>June 23, 2024:</strong> Wembley Stadium, London, United Kingdom<br>
+            <strong>June 28, 2024:</strong> Croke Park, Dublin, Ireland<br>
+            <strong>June 29, 2024:</strong> Croke Park, Dublin, Ireland<br>
+            <strong>June 30, 2024:</strong> Croke Park, Dublin, Ireland<br>
+            <strong>July 4, 2024:</strong> Johan Cruyff Arena, Amsterdam, Netherlands<br>
+            <strong>July 5, 2024:</strong> Johan Cruyff Arena, Amsterdam, Netherlands<br>
+            <strong>July 6, 2024:</strong> Johan Cruyff Arena, Amsterdam, Netherlands<br>
+            <strong>July 9, 2024:</strong> Letzigrund Stadium, Zurich, Switzerland<br>
+            <strong>July 10, 2024:</strong> Letzigrund Stadium, Zurich, Switzerland<br>
+            <strong>July 13, 2024:</strong> San Siro, Milan, Italy<br>
+            <strong>July 14, 2024:</strong> San Siro, Milan, Italy<br>
+            <strong>July 17, 2024:</strong> Veltins-Arena, Gelsenkirchen, Germany<br>
+            <strong>July 18, 2024:</strong> Veltins-Arena, Gelsenkirchen, Germany<br>
+            <strong>July 19, 2024:</strong> Veltins-Arena, Gelsenkirchen, Germany<br>
+            <strong>July 23, 2024:</strong> Volksparkstadion, Hamburg, Germany<br>
+            <strong>July 24, 2024:</strong> Volksparkstadion, Hamburg, Germany<br>
+            <strong>July 27, 2024:</strong> Allianz Arena, Munich, Germany<br>
+            <strong>July 28, 2024:</strong> Allianz Arena, Munich, Germany<br>
+            <strong>August 1, 2024:</strong> National Stadium, Warsaw, Poland<br>
+            <strong>August 2, 2024:</strong> National Stadium, Warsaw, Poland<br>
+            <strong>August 3, 2024:</strong> National Stadium, Warsaw, Poland<br>
+            <strong>August 8, 2024:</strong> Ernst-Happel-Stadion, Vienna, Austria<br>
+            <strong>August 9, 2024:</strong> Ernst-Happel-Stadion, Vienna, Austria<br>
+            <strong>August 10, 2024:</strong> Ernst-Happel-Stadion, Vienna, Austria<br>
+            <strong>August 15, 2024:</strong> Wembley Stadium, London, United Kingdom<br>
+            <strong>August 16, 2024:</strong> Wembley Stadium, London, United Kingdom<br>
+            <strong>August 17, 2024:</strong> Wembley Stadium, London, United Kingdom<br>
+            <strong>November 14, 2024:</strong> Rogers Centre, Toronto, Canada<br>
+            <strong>November 15, 2024:</strong> Rogers Centre, Toronto, Canada<br>
+            <strong>November 16, 2024:</strong> Rogers Centre, Toronto, Canada<br>
+            <strong>November 21, 2024:</strong> Rogers Centre, Toronto, Canada<br>
+            <strong>November 22, 2024:</strong> Rogers Centre, Toronto, Canada<br>
+            <strong>November 23, 2024:</strong> Rogers Centre, Toronto, Canada<br>
+            <strong>December 6, 2024:</strong> BC Place, Vancouver, Canada<br>
+            <strong>December 7, 2024:</strong> BC Place, Vancouver, Canada<br>
+            <strong>December 8, 2024:</strong> BC Place, Vancouver, Canada<br>
+        </p>
+         
+    </div>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibGFycnlidWNoIiwiYSI6ImNqOG93NHRxejA4bzYzM21rMjZhYTR6MjUifQ.pOEkqlk5klnzMIzpeiDUVw';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [0, 0],
+            zoom: 2,
+            projection: 'naturalEarth'  // Projection should be in quotes
+        });
+
+        map.on('style.load', () => {
+            fetch('taylor_eras_tour_stadiums.geojson')
+                .then(response => response.json())
+                .then(data => {
+                    map.addSource('venues', {
+                        type: 'geojson',
+                        data: data
+                    });
+
+                    map.loadImage('https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png', (error, image) => {
+                        if (error) throw error;
+                        map.addImage('custom-marker', image);
+
+                        map.addLayer({
+                            id: 'venues',
+                            type: 'symbol',
+                            source: 'venues',
+                            layout: {
+                                'icon-image': 'custom-marker',
+                                'icon-size': 1.5,
+                                'text-field': ['get', 'Stadium'],
+                                'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+                                'text-offset': [0, 1.5],
+                                'text-anchor': 'top'
+                            },
+                            paint: {
+                                'text-color': '#000000'
+                            }
+                        });
+
+                        const popup = new mapboxgl.Popup({
+                            closeButton: false,
+                            closeOnClick: false
+                        });
+
+                        map.on('mouseenter', 'venues', (e) => {
+                            map.getCanvas().style.cursor = 'pointer';
+                            const coordinates = e.features[0].geometry.coordinates.slice();
+                            const name = e.features[0].properties.Stadium;
+                            const city = e.features[0].properties.City;
+                            const country = e.features[0].properties.Country;
+
+                            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                            }
+
+                            popup.setLngLat(coordinates).setHTML(`${name}, ${city}, ${country}`).addTo(map);
+                        });
+
+                        map.on('mouseleave', 'venues', () => {
+                            map.getCanvas().style.cursor = '';
+                            popup.remove();
+                        });
+                    });
+                })
+                .catch(error => console.error('Error loading GeoJSON data:', error));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,917 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.1331785,
+                    19.4326296
+                ]
+            },
+            "properties": {
+                "name": "Foro Sol",
+                "city": "Mexico City",
+                "event_date": "27-08-2023",
+                "venue_id": "53d63be5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.1331785,
+                    19.4326296
+                ]
+            },
+            "properties": {
+                "name": "Foro Sol",
+                "city": "Mexico City",
+                "event_date": "26-08-2023",
+                "venue_id": "53d63be5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.1331785,
+                    19.4326296
+                ]
+            },
+            "properties": {
+                "name": "Foro Sol",
+                "city": "Mexico City",
+                "event_date": "25-08-2023",
+                "venue_id": "53d63be5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.1331785,
+                    19.4326296
+                ]
+            },
+            "properties": {
+                "name": "Foro Sol",
+                "city": "Mexico City",
+                "event_date": "24-08-2023",
+                "venue_id": "53d63be5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.353132,
+                    33.9562003
+                ]
+            },
+            "properties": {
+                "name": "SoFi Stadium",
+                "city": "Inglewood",
+                "event_date": "09-08-2023",
+                "venue_id": "13d0b545"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.353132,
+                    33.9562003
+                ]
+            },
+            "properties": {
+                "name": "SoFi Stadium",
+                "city": "Inglewood",
+                "event_date": "08-08-2023",
+                "venue_id": "13d0b545"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.353132,
+                    33.9562003
+                ]
+            },
+            "properties": {
+                "name": "SoFi Stadium",
+                "city": "Inglewood",
+                "event_date": "07-08-2023",
+                "venue_id": "13d0b545"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.353132,
+                    33.9562003
+                ]
+            },
+            "properties": {
+                "name": "SoFi Stadium",
+                "city": "Inglewood",
+                "event_date": "05-08-2023",
+                "venue_id": "13d0b545"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.353132,
+                    33.9562003
+                ]
+            },
+            "properties": {
+                "name": "SoFi Stadium",
+                "city": "Inglewood",
+                "event_date": "04-08-2023",
+                "venue_id": "13d0b545"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.353132,
+                    33.9562003
+                ]
+            },
+            "properties": {
+                "name": "SoFi Stadium",
+                "city": "Inglewood",
+                "event_date": "03-08-2023",
+                "venue_id": "13d0b545"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.6846349,
+                    37.2333253
+                ]
+            },
+            "properties": {
+                "name": "Levi's Stadium",
+                "city": "Santa Clara",
+                "event_date": "29-07-2023",
+                "venue_id": "63d4564f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.6846349,
+                    37.2333253
+                ]
+            },
+            "properties": {
+                "name": "Levi's Stadium",
+                "city": "Santa Clara",
+                "event_date": "28-07-2023",
+                "venue_id": "63d4564f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.330062,
+                    47.6038321
+                ]
+            },
+            "properties": {
+                "name": "Lumen Field",
+                "city": "Seattle",
+                "event_date": "23-07-2023",
+                "venue_id": "5bd0d35c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.330062,
+                    47.6038321
+                ]
+            },
+            "properties": {
+                "name": "Lumen Field",
+                "city": "Seattle",
+                "event_date": "22-07-2023",
+                "venue_id": "5bd0d35c"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.984862,
+                    39.7392364
+                ]
+            },
+            "properties": {
+                "name": "Empower Field at Mile High",
+                "city": "Denver",
+                "event_date": "15-07-2023",
+                "venue_id": "63d30e6b"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.984862,
+                    39.7392364
+                ]
+            },
+            "properties": {
+                "name": "Empower Field at Mile High",
+                "city": "Denver",
+                "event_date": "14-07-2023",
+                "venue_id": "63d30e6b"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -94.5781416,
+                    39.100105
+                ]
+            },
+            "properties": {
+                "name": "GEHA Field at Arrowhead Stadium",
+                "city": "Kansas City",
+                "event_date": "08-07-2023",
+                "venue_id": "23d08027"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -94.5781416,
+                    39.100105
+                ]
+            },
+            "properties": {
+                "name": "GEHA Field at Arrowhead Stadium",
+                "city": "Kansas City",
+                "event_date": "07-07-2023",
+                "venue_id": "23d08027"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.5124602,
+                    39.1014537
+                ]
+            },
+            "properties": {
+                "name": "Paycor Stadium",
+                "city": "Cincinnati",
+                "event_date": "01-07-2023",
+                "venue_id": "4bd07bca"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.5124602,
+                    39.1014537
+                ]
+            },
+            "properties": {
+                "name": "Paycor Stadium",
+                "city": "Cincinnati",
+                "event_date": "30-06-2023",
+                "venue_id": "4bd07bca"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.2654692,
+                    44.9772995
+                ]
+            },
+            "properties": {
+                "name": "U.S. Bank Stadium",
+                "city": "Minneapolis",
+                "event_date": "24-06-2023",
+                "venue_id": "43d253af"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.2654692,
+                    44.9772995
+                ]
+            },
+            "properties": {
+                "name": "U.S. Bank Stadium",
+                "city": "Minneapolis",
+                "event_date": "23-06-2023",
+                "venue_id": "43d253af"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9900861,
+                    40.4416941
+                ]
+            },
+            "properties": {
+                "name": "Acrisure Stadium",
+                "city": "Pittsburgh",
+                "event_date": "17-06-2023",
+                "venue_id": "13d05d01"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9900861,
+                    40.4416941
+                ]
+            },
+            "properties": {
+                "name": "Acrisure Stadium",
+                "city": "Pittsburgh",
+                "event_date": "16-06-2023",
+                "venue_id": "13d05d01"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.0466403,
+                    42.3315509
+                ]
+            },
+            "properties": {
+                "name": "Ford Field",
+                "city": "Detroit",
+                "event_date": "10-06-2023",
+                "venue_id": "bd6398a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.0466403,
+                    42.3315509
+                ]
+            },
+            "properties": {
+                "name": "Ford Field",
+                "city": "Detroit",
+                "event_date": "09-06-2023",
+                "venue_id": "bd6398a"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.6244212,
+                    41.8755616
+                ]
+            },
+            "properties": {
+                "name": "Soldier Field",
+                "city": "Chicago",
+                "event_date": "04-06-2023",
+                "venue_id": "4bd637ce"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.6244212,
+                    41.8755616
+                ]
+            },
+            "properties": {
+                "name": "Soldier Field",
+                "city": "Chicago",
+                "event_date": "03-06-2023",
+                "venue_id": "4bd637ce"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.6244212,
+                    41.8755616
+                ]
+            },
+            "properties": {
+                "name": "Soldier Field",
+                "city": "Chicago",
+                "event_date": "02-06-2023",
+                "venue_id": "4bd637ce"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0970865,
+                    40.833989
+                ]
+            },
+            "properties": {
+                "name": "MetLife Stadium",
+                "city": "East Rutherford",
+                "event_date": "28-05-2023",
+                "venue_id": "1bd72160"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0970865,
+                    40.833989
+                ]
+            },
+            "properties": {
+                "name": "MetLife Stadium",
+                "city": "East Rutherford",
+                "event_date": "27-05-2023",
+                "venue_id": "1bd72160"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0970865,
+                    40.833989
+                ]
+            },
+            "properties": {
+                "name": "MetLife Stadium",
+                "city": "East Rutherford",
+                "event_date": "26-05-2023",
+                "venue_id": "1bd72160"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.2478308,
+                    42.0653768
+                ]
+            },
+            "properties": {
+                "name": "Gillette Stadium",
+                "city": "Foxborough",
+                "event_date": "21-05-2023",
+                "venue_id": "13d6d59d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.2478308,
+                    42.0653768
+                ]
+            },
+            "properties": {
+                "name": "Gillette Stadium",
+                "city": "Foxborough",
+                "event_date": "20-05-2023",
+                "venue_id": "13d6d59d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.2478308,
+                    42.0653768
+                ]
+            },
+            "properties": {
+                "name": "Gillette Stadium",
+                "city": "Foxborough",
+                "event_date": "19-05-2023",
+                "venue_id": "13d6d59d"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1635262,
+                    39.9527237
+                ]
+            },
+            "properties": {
+                "name": "Lincoln Financial Field",
+                "city": "Philadelphia",
+                "event_date": "14-05-2023",
+                "venue_id": "7bd61e04"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1635262,
+                    39.9527237
+                ]
+            },
+            "properties": {
+                "name": "Lincoln Financial Field",
+                "city": "Philadelphia",
+                "event_date": "13-05-2023",
+                "venue_id": "7bd61e04"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.1635262,
+                    39.9527237
+                ]
+            },
+            "properties": {
+                "name": "Lincoln Financial Field",
+                "city": "Philadelphia",
+                "event_date": "12-05-2023",
+                "venue_id": "7bd61e04"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7742984,
+                    36.1622767
+                ]
+            },
+            "properties": {
+                "name": "Nissan Stadium",
+                "city": "Nashville",
+                "event_date": "07-05-2023",
+                "venue_id": "53d5a385"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7742984,
+                    36.1622767
+                ]
+            },
+            "properties": {
+                "name": "Nissan Stadium",
+                "city": "Nashville",
+                "event_date": "06-05-2023",
+                "venue_id": "53d5a385"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -86.7742984,
+                    36.1622767
+                ]
+            },
+            "properties": {
+                "name": "Nissan Stadium",
+                "city": "Nashville",
+                "event_date": "05-05-2023",
+                "venue_id": "53d5a385"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.3902644,
+                    33.7489924
+                ]
+            },
+            "properties": {
+                "name": "Mercedes-Benz Stadium",
+                "city": "Atlanta",
+                "event_date": "30-04-2023",
+                "venue_id": "6bd28eea"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.3902644,
+                    33.7489924
+                ]
+            },
+            "properties": {
+                "name": "Mercedes-Benz Stadium",
+                "city": "Atlanta",
+                "event_date": "29-04-2023",
+                "venue_id": "6bd28eea"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.3902644,
+                    33.7489924
+                ]
+            },
+            "properties": {
+                "name": "Mercedes-Benz Stadium",
+                "city": "Atlanta",
+                "event_date": "28-04-2023",
+                "venue_id": "6bd28eea"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.3676974,
+                    29.7589382
+                ]
+            },
+            "properties": {
+                "name": "NRG Stadium",
+                "city": "Houston",
+                "event_date": "23-04-2023",
+                "venue_id": "bd451b6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.3676974,
+                    29.7589382
+                ]
+            },
+            "properties": {
+                "name": "NRG Stadium",
+                "city": "Houston",
+                "event_date": "22-04-2023",
+                "venue_id": "bd451b6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -95.3676974,
+                    29.7589382
+                ]
+            },
+            "properties": {
+                "name": "NRG Stadium",
+                "city": "Houston",
+                "event_date": "21-04-2023",
+                "venue_id": "bd451b6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.458444,
+                    27.9477595
+                ]
+            },
+            "properties": {
+                "name": "Raymond James Stadium",
+                "city": "Tampa",
+                "event_date": "15-04-2023",
+                "venue_id": "73d616a5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.458444,
+                    27.9477595
+                ]
+            },
+            "properties": {
+                "name": "Raymond James Stadium",
+                "city": "Tampa",
+                "event_date": "14-04-2023",
+                "venue_id": "73d616a5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.458444,
+                    27.9477595
+                ]
+            },
+            "properties": {
+                "name": "Raymond James Stadium",
+                "city": "Tampa",
+                "event_date": "13-04-2023",
+                "venue_id": "73d616a5"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.1071186,
+                    32.7355816
+                ]
+            },
+            "properties": {
+                "name": "AT&T Stadium",
+                "city": "Arlington",
+                "event_date": "02-04-2023",
+                "venue_id": "6bd43202"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.1071186,
+                    32.7355816
+                ]
+            },
+            "properties": {
+                "name": "AT&T Stadium",
+                "city": "Arlington",
+                "event_date": "01-04-2023",
+                "venue_id": "6bd43202"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -97.1071186,
+                    32.7355816
+                ]
+            },
+            "properties": {
+                "name": "AT&T Stadium",
+                "city": "Arlington",
+                "event_date": "31-03-2023",
+                "venue_id": "6bd43202"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.148516,
+                    36.1672559
+                ]
+            },
+            "properties": {
+                "name": "Allegiant Stadium",
+                "city": "Las Vegas",
+                "event_date": "25-03-2023",
+                "venue_id": "6bd08e7e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.148516,
+                    36.1672559
+                ]
+            },
+            "properties": {
+                "name": "Allegiant Stadium",
+                "city": "Las Vegas",
+                "event_date": "24-03-2023",
+                "venue_id": "6bd08e7e"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2478471,
+                    34.1469416
+                ]
+            },
+            "properties": {
+                "name": "State Farm Stadium",
+                "city": "Glendale",
+                "event_date": "18-03-2023",
+                "venue_id": "63d20e8f"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2478471,
+                    34.1469416
+                ]
+            },
+            "properties": {
+                "name": "State Farm Stadium",
+                "city": "Glendale",
+                "event_date": "17-03-2023",
+                "venue_id": "63d20e8f"
+            }
+        }
+    ]
+}
